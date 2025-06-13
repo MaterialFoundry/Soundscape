@@ -46,22 +46,25 @@ Hooks.once('ready',async ()=>{
     }
 })
 
-Hooks.on("renderSidebarTab", (app, html) => {
+Hooks.on("renderApplicationV2", (app, html) => {
     activeUser = game.settings.get(moduleName, 'targetPlayer') === game.user.name;
     if (app.options.id == 'playlists' || app.id == 'playlists') {
          /**
          * Create labels and buttons in sidebar
          */
         const volumeSlider = $(`
-            <li class="sound flexrow">
-                <h4 class="sound-name">Soundscape</h4>
-                <i class="volume-icon fas fa-volume-down"></i>
-                <input class="global-volume-slider" name="soundscapeVolume" type="range" min="0" max="1" step="0.05" value="${game.settings.get(moduleName,'volume')}">
+            <li class="flexrow" data-tooltip="x">
+                <label>Soundscape</label>
+                <i class="volume-icon fa-solid fa-volume-low" inert></i>
+                <range-picker name="soundscapeVolume" value="${game.settings.get(moduleName,'volume')}" min="0" max="1" step="0.05" class="global-volume-slider" data-tooltip="65%" aria-label="Soundscape" aria-valuetext="Volume: 65%">
+                    <input type="range" min="0" max="1" step="0.05">
+                    <input type="number" min="0" max="1" step="0.05">
+                </range-picker>
             </li>
             `
         );
-        $('#global-volume').find('.playlist-sounds').append(volumeSlider);
-        const vol = html.find("input[name=soundscapeVolume]");
+        $('.global-volume').find('ol.plain').append(volumeSlider);
+        const vol = $(html).find("input[name=soundscapeVolume]");
         vol.on("input change", event => {
             const volume = event.target.value;
             if (mixer != undefined) mixer.master.effects.interfaceGain.set(volume);
@@ -80,7 +83,7 @@ Hooks.on("renderSidebarTab", (app, html) => {
             </div>
             `
         );
-        html.find(".directory-header").prepend(btn);
+        $(html).find(".directory-header").prepend(btn);
         btn.on("click",async event => {
             mixer.renderApp(true);
         });
@@ -104,7 +107,7 @@ Hooks.on("renderSidebarTab", (app, html) => {
             }; 
         }
         */
-        
+       
     }
 });
 
