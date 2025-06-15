@@ -56,10 +56,7 @@ Hooks.on("renderApplicationV2", (app, html) => {
             <li class="flexrow" data-tooltip="x">
                 <label>Soundscape</label>
                 <i class="volume-icon fa-solid fa-volume-low" inert></i>
-                <range-picker name="soundscapeVolume" value="${game.settings.get(moduleName,'volume')}" min="0" max="1" step="0.05" class="global-volume-slider" data-tooltip="65%" aria-label="Soundscape" aria-valuetext="Volume: 65%">
-                    <input type="range" min="0" max="1" step="0.05">
-                    <input type="number" min="0" max="1" step="0.05">
-                </range-picker>
+                <input class="global-volume-slider" style="flex: 2; height: unset;" name="soundscapeVolume" type="range" min="0" max="1" step="0.05" value="${game.settings.get(moduleName,'volume')}">
             </li>
             `
         );
