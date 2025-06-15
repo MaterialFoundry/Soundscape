@@ -53,7 +53,7 @@ Hooks.on("renderApplicationV2", (app, html) => {
          * Create labels and buttons in sidebar
          */
         const volumeSlider = $(`
-            <li class="flexrow" data-tooltip="x">
+            <li class="flexrow" data-tooltip="Controls the local volume of music, ambience, and sound effects produced by the Soundscape module.">
                 <label>Soundscape</label>
                 <i class="volume-icon fa-solid fa-volume-low" inert></i>
                 <input class="global-volume-slider" style="flex: 2; height: unset;" name="soundscapeVolume" type="range" min="0" max="1" step="0.05" value="${game.settings.get(moduleName,'volume')}">
