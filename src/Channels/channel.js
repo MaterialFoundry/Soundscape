@@ -84,8 +84,8 @@ export class Channel {
         source: "",
     }
 
-    settings = duplicate(Channel.DEF_SETTINGS)
-    soundData = duplicate(Channel.DEF_SOUNDDATA)
+    settings = foundry.utils.duplicate(Channel.DEF_SETTINGS)
+    soundData = foundry.utils.duplicate(Channel.DEF_SOUNDDATA)
 
     async clear() {
         this.master = false
@@ -98,9 +98,9 @@ export class Channel {
         this.source = null
         this.sourceArray = undefined
         const effects = this.settings.effects
-        this.settings = duplicate(Channel.DEF_SETTINGS)
+        this.settings = foundry.utils.duplicate(Channel.DEF_SETTINGS)
         this.settings.effects = effects
-        this.soundData = duplicate(Channel.DEF_SOUNDDATA)
+        this.soundData = foundry.utils.duplicate(Channel.DEF_SOUNDDATA)
     }
 
     async setData(data) {

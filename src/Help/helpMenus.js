@@ -4,7 +4,7 @@ export class helpMenuMixer extends FormApplication {
     }
 
     static get defaultOptions() {
-        return mergeObject(super.defaultOptions, {
+        return foundry.utils.mergeObject(super.defaultOptions, {
             id: "helpMenu_mixer",
             title: game.i18n.localize("SOUNDSCAPE.HelpMenu.Mixer"),
             template: "./modules/soundscape/src/Help/helpMenu_mixer.html",
@@ -19,7 +19,7 @@ export class helpMenuFx extends FormApplication {
     }
 
     static get defaultOptions() {
-        return mergeObject(super.defaultOptions, {
+        return foundry.utils.mergeObject(super.defaultOptions, {
             id: "helpMenu_fxConfig",
             title: game.i18n.localize("SOUNDSCAPE.HelpMenu.FxConfig"),
             template: "./modules/soundscape/src/Help/helpMenu_fx.html",
@@ -34,7 +34,7 @@ export class helpMenuSoundConfig extends FormApplication {
     }
 
     static get defaultOptions() {
-        return mergeObject(super.defaultOptions, {
+        return foundry.utils.mergeObject(super.defaultOptions, {
             id: "helpMenu_soundConfig",
             title: game.i18n.localize("SOUNDSCAPE.HelpMenu.SoundConfig"),
             template: "./modules/soundscape/src/Help/helpMenu_soundConfig.html",
@@ -49,7 +49,7 @@ export class helpMenuSoundboardConfig extends FormApplication {
     }
 
     static get defaultOptions() {
-        return mergeObject(super.defaultOptions, {
+        return foundry.utils.mergeObject(super.defaultOptions, {
             id: "helpMenu_soundboard",
             title: game.i18n.localize("SOUNDSCAPE.HelpMenu.Soundboard"),
             template: "./modules/soundscape/src/Help/helpMenu_soundboardConfig.html",
@@ -64,7 +64,7 @@ export class helpMenuSoundscapeConfig extends FormApplication {
     }
 
     static get defaultOptions() {
-        return mergeObject(super.defaultOptions, {
+        return foundry.utils.mergeObject(super.defaultOptions, {
             id: "helpMenu_soundscape",
             title: game.i18n.localize("SOUNDSCAPE.HelpMenu.Soundscape"),
             template: "./modules/soundscape/src/Help/helpMenu_soundscapeConfig.html",
@@ -79,7 +79,7 @@ export class helpMenuImport extends FormApplication {
     }
 
     static get defaultOptions() {
-        return mergeObject(super.defaultOptions, {
+        return foundry.utils.mergeObject(super.defaultOptions, {
             id: "helpMenu_import",
             title: game.i18n.localize("SOUNDSCAPE.HelpMenu.Import"),
             template: "./modules/soundscape/src/Help/helpMenu_import.html",
@@ -94,7 +94,7 @@ export class helpMenuExport extends FormApplication {
     }
 
     static get defaultOptions() {
-        return mergeObject(super.defaultOptions, {
+        return foundry.utils.mergeObject(super.defaultOptions, {
             id: "helpMenu_export",
             title: game.i18n.localize("SOUNDSCAPE.HelpMenu.Export"),
             template: "./modules/soundscape/src/Help/helpMenu_export.html",

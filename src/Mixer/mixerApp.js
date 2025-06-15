@@ -22,7 +22,7 @@ export class MixerApp extends FormApplication {
      * Default Options for this FormApplication
      */
     static get defaultOptions() {
-        return mergeObject(super.defaultOptions, {
+        return foundry.utils.mergeObject(super.defaultOptions, {
             id: "soundscape_mixer",
             title: "Soundscape: "+game.i18n.localize("SOUNDSCAPE.Mixer"),
             template: "./modules/soundscape/src/Mixer/mixerApp.html",

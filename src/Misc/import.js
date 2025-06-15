@@ -21,7 +21,7 @@ export class importConfigForm extends FormApplication {
      * Default Options for this FormApplication
      */
     static get defaultOptions() {
-        return mergeObject(super.defaultOptions, {
+        return foundry.utils.mergeObject(super.defaultOptions, {
             id: "Soundscape_Import",
             title: "Soundscape: " + game.i18n.localize("SOUNDSCAPE.Import"),
             template: "./modules/soundscape/src/Misc/importDialog.html",

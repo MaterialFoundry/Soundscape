@@ -1,3 +1,6 @@
+<h2>Current State of Soundscape</h2>
+Currently, Soundscape is maintained to keep it compatible with the latest Foundry VTT releases. While there are plans for the future, it is not actively being maintained, so new features might not get implemented and non-critical bugs may not get fixed.
+
 <h2>Introduction</h2>
 Soundscape is a Foundry VTT module that gives users an easy way to mix down multiple audio tracks into a single highly configurable soundscape. The individual volumes of the sounds can be changed on the fly, 
 and multiple effects can be applied to the sounds in order to create the perfect soundscape. Besides that, there is a built-in soundboard that can be 
@@ -9,10 +12,10 @@ Multiple soundscapes, each with their own sounds and soundboard, can be set up a
 <b><a href="https://www.youtube.com/watch?v=L8kqWJQ5Dpo">Demonstration Video</a></b>
 
 <h2>Documentation</h2>
-For the documentation, please take a look at the <a href="https://github.com/CDeenen/Soundscape/wiki">wiki</a>, or press the help buttons that are present in each Soundscape screen.
+For the documentation, please take a look at the <a href="https://github.com/MaterialFoundry/Soundscape/wiki">wiki</a>, or press the help buttons that are present in each Soundscape screen.
 
 <h2>Feedback</h2>
-If you have any suggestions or bugs to report, feel free to create an <a href="https://github.com/CDeenen/Soundscape/issues">issue</a>, contact me on Discord (Cris#6864), or send me an email: cdeenen@outlook.com.
+If you have any suggestions or bugs to report, feel free to create an <a href="https://github.com/MaterialFoundry/Soundscape/issues">issue</a>, contact me on Discord (Cris#6864), or send me an email: cdeenen@outlook.com.
 
 <h2>Credits</h2>
 <b>Author:</b> Cristian Deenen (Cris#6864 on Discord)<br>

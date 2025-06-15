@@ -13,7 +13,7 @@ export class exportConfigForm extends FormApplication {
      * Default Options for this FormApplication
      */
     static get defaultOptions() {
-        return mergeObject(super.defaultOptions, {
+        return foundry.utils.mergeObject(super.defaultOptions, {
             id: "Soundscape_Export",
             title: "Soundscape: " + game.i18n.localize("SOUNDSCAPE.Export"),
             template: "./modules/soundscape/src/Misc/exportDialog.html",

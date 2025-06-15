@@ -18,7 +18,7 @@ export class SoundConfig extends FormApplication {
      * Default Options for this FormApplication
      */
     static get defaultOptions() {
-        return mergeObject(super.defaultOptions, {
+        return foundry.utils.mergeObject(super.defaultOptions, {
             id: "soundscape_soundConfig",
             title: "Soundscape: "+game.i18n.localize("SOUNDSCAPE.SoundConfig"),
             template: "./modules/soundscape/src/Channels/soundConfig.html",

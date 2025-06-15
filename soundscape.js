@@ -252,7 +252,7 @@ Hooks.on('canvasReady',async (canvas)=>{
     if (!activeUser || !canvas.scene?.active) return;
     
     let loadSoundscape;
-    const combatInScene = game.combats.contents.find(c => c.scene.id == canvas.scene.id);
+    const combatInScene = game.combats.contents.find(c => c?.scene?.id == canvas.scene.id);
 
     //If combat is currently active
     if (combatInScene?.active && combatInScene?.current.round > 0) {

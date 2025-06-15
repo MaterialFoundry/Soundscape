@@ -35,7 +35,7 @@ export class FXConfig extends FormApplication {
      * Default Options for this FormApplication
      */
     static get defaultOptions() {
-        return mergeObject(super.defaultOptions, {
+        return foundry.utils.mergeObject(super.defaultOptions, {
             id: "soundscape_fxConfig",
             title: "FX Configuration",
             template: "./modules/soundscape/src/Channels/Effects/fxConfig.html",

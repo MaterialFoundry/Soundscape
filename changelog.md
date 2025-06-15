@@ -1,4 +1,8 @@
 # Changelog
+
+### v1.2.0 - 16-06-2025
+Made compatible with v13. This version is not compatible with Foundry versions before v13. It is functionally identical to v1.1.1, so please use that version instead.
+
 ### v1.1.1 - 28-06-2023
 Fixes:
 <ul>
